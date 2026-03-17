@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dossier Artístico - Team Matanza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Lora', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        madera: {
+                            100: '#f5f0eb',
+                            300: '#d1bfae',
+                            600: '#8b5a2b',
+                            800: '#4a3728',
+                            900: '#2c1e16',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            @page { size: A4; margin: 15mm; }
+            body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background-color: #f5f0eb !important; }
+            .bg-madera-900 { background-color: #2c1e16 !important; color: #ffffff !important; }
+            .bg-madera-100 { background-color: #f5f0eb !important; }
+            .bg-white { background-color: #ffffff !important; }
+            .print-avoid-break { page-break-inside: avoid; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="bg-madera-100 text-madera-800 font-sans leading-relaxed">
+
+    <!-- Encabezado / Portada -->
+    <header class="bg-madera-900 text-white py-16 md:py-20 px-4 relative overflow-hidden print-avoid-break">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/wood-pattern.png')]"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-6xl md:text-8xl font-serif font-bold tracking-widest uppercase mb-4 text-transparent bg-clip-text bg-gradient-to-r from-madera-100 to-madera-300" style="-webkit-text-fill-color: #d1bfae;">
+                Team Matanza
+            </h1>
+            <p class="text-2xl md:text-3xl font-light text-madera-100 tracking-wide mb-8 font-serif italic">
+                "Somos amigos que hacemos música"
+            </p>
+            
+            <!-- Datos de Contacto Rápidos -->
+            <div class="flex flex-col items-center gap-4 mb-8">
+                <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm md:text-base font-medium bg-black/40 py-2 px-6 rounded-full backdrop-blur-sm border border-madera-600/50">
+                    <a href="mailto:matanzateam5@gmail.com" class="hover:text-madera-300 transition-colors text-white"><i class="fas fa-envelope mr-2"></i>matanzateam5@gmail.com</a>
+                    <span class="hidden sm:inline text-madera-600">|</span>
+                    <a href="tel:+5491140484747" class="hover:text-madera-300 transition-colors text-white"><i class="fas fa-phone mr-2"></i>+54 9 11 4048-4747</a>
+                    <span class="hidden sm:inline text-madera-600">|</span>
+                    <span class="text-white"><i class="fas fa-map-marker-alt mr-2"></i>La Matanza, Buenos Aires</span>
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.instagram.com/matanza.team/?hl=es-la" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white px-4 py-2 rounded-full font-semibold text-sm hover:scale-105 transition-transform">
+                        <i class="fab fa-instagram text-lg"></i> @matanza.team
+                    </a>
+                    <a href="https://www.tiktok.com/@matanza.team?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-black text-white border border-gray-600 px-4 py-2 rounded-full font-semibold text-sm hover:scale-105 transition-transform">
+                        <i class="fab fa-tiktok text-lg text-[#25F4EE]"></i> @matanza.team
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=KDpNhpZaX8U" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#FF0000] text-white px-4 py-2 rounded-full font-semibold text-sm hover:scale-105 transition-transform">
+                        <i class="fab fa-youtube text-lg"></i> @TeamMatanza
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Biografía e Imágenes -->
+        <section class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                
+                <!-- Columna Izquierda: Historia -->
+                <div class="print-avoid-break">
+                    <div class="flex items-center mb-8">
+                        <h2 class="text-4xl font-serif text-madera-900 uppercase tracking-widest">Biografía</h2>
+                        <div class="h-px bg-madera-600 flex-grow ml-6"></div>
+                    </div>
+                    <div class="space-y-4 text-lg text-madera-800">
+                        <p>
+                            Nuestras raíces nacen en las <strong>orquestas escuela de La Matanza</strong>. Aunque crecimos en distintas agrupaciones, la música se encargó de cruzar nuestros caminos. Con el tiempo, lo que empezó como juntadas para compartir y divertirnos, se transformó en una duradera amistad.
+                        </p>
+                        <p>
+                            El punto de inflexión llegó en <strong>2023</strong>, cuando cinco de nosotros fuimos seleccionados para integrar una Orquesta Sinfónica Juvenil a nivel nacional. Rodeados de talentos de todo el país, fue allí donde, por nuestra llamativa forma de ser, nos bautizaron definitivamente como el <strong>"Team Matanza"</strong>.
+                        </p>
+                        <p>
+                            Somos músicos de formación académica —nuestros instrumentos de cabecera son el contrabajo, la viola y el violín—, pero poseemos una buena capacidad de versatilidad: agarramos la guitarra, el bombo, cantamos y nos adaptamos a cualquier escenario.
+                        </p>
+                    </div>
+
+                    <!-- Foto 2 (Abajo de la biografía, más chica) -->
+                    <div class="mt-10 mx-auto w-3/4 md:w-2/3 rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-[4/3] bg-madera-300 group">
+                        <img src="foto2.jpeg" alt="Team Matanza - Gira" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Foto Arriba + Identidad Sonora -->
+                <div class="flex flex-col gap-8 print-avoid-break">
+                    
+                    <!-- Foto 1 (Arriba) - Formato Cuadrado -->
+                    <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white aspect-square bg-madera-300 group">
+                        <img src="foto1.jpg" alt="Team Matanza - Ensamble" class="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-700">
+                    </div>
+
+                    <!-- Identidad Sonora Box (Centro) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border border-madera-300 relative">
+                        <div class="absolute -top-4 -right-4 text-6xl text-madera-300 opacity-50"><i class="fas fa-quote-right"></i></div>
+                        <h3 class="text-2xl font-serif text-madera-900 mb-4 font-bold">Identidad Sonora</h3>
+                        <p class="mb-4 text-sm md:text-base">
+                            Tratamos de representar siempre a nuestro barrio, la cultura y la música argentina, combinando raíces folclóricas y urbanas con todo lo que aprendimos en nuestra formación académica.
+                        </p>
+                        <div class="bg-madera-100 p-4 rounded-lg border-l-4 border-madera-600 mb-4">
+                            <p class="text-sm italic font-medium">
+                                <i class="fas fa-music mr-2 text-madera-600"></i>
+                                Recientemente compartimos un video tocando el tango <strong>"Nada"</strong>, un arreglo donde varios de nosotros cantamos mientras todos tocamos nuestros instrumentos nativos.
+                            </p>
+                        </div>
+                        <p class="font-semibold text-madera-600 mb-2">Nuestros gustos y repertorio varían entre:</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Música Académica</span>
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Tango</span>
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Folklore</span>
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Rock</span>
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Cumbia</span>
+                            <span class="px-3 py-1 bg-madera-100 border border-madera-300 rounded-full text-xs font-bold text-madera-900">Baladas</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Experiencias Destacadas -->
+        <section class="bg-madera-900 text-madera-100 py-16 md:py-24 relative overflow-hidden print-avoid-break">
+            <div class="max-w-5xl mx-auto px-6 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-serif text-white uppercase tracking-widest mb-4">Nuestra Experiencia</h2>
+                    <p class="text-madera-300 text-lg max-w-2xl mx-auto">Un recorrido compartido de aprendizaje y hermosos escenarios.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+                    
+                    <!-- Hito 1: Formación -->
+                    <div class="flex gap-4">
+                        <div class="text-4xl text-madera-300 mt-1"><i class="fas fa-landmark"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Formación en Orquestas</h3>
+                            <p class="text-sm md:text-base text-madera-100 opacity-90">
+                                Estamos esparcidos y agradecidos de participar en las orquestas juveniles más grandes del país, como <strong>La Orquesta Académica del Teatro Colón</strong>, <strong>La Sinfónica Juvenil Nacional</strong> y <strong>La Sinfónica Juvenil Bonaerense</strong>. En este camino hemos sido acompañados por grandes maestros, como el director Andrés González, a quien le debemos gran parte de nuestra formación, entre muchos otros.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 2: Estadios -->
+                    <div class="flex gap-4">
+                        <div class="text-4xl text-madera-300 mt-1"><i class="fas fa-microphone-alt"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Movistar Arena y Estadios</h3>
+                            <p class="text-sm font-semibold text-madera-300 mb-1">Junio 2025</p>
+                            <p class="text-sm md:text-base text-madera-100 opacity-90">
+                                Tuvimos la linda oportunidad de presentarnos como ensamble en el Movistar Arena acompañando a Paulo Londra. Además, participamos en el Estadio Único Diego Armando Maradona grabando la canción del Mundial 2022 junto a La Mosca.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 3: Compartiendo musica -->
+                    <div class="flex gap-4">
+                        <div class="text-4xl text-madera-300 mt-1"><i class="fas fa-users"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Compartiendo escenarios</h3>
+                            <p class="text-sm md:text-base text-madera-100 opacity-90">
+                                A lo largo del tiempo, tuvimos la suerte de ser convocados para grabaciones y conciertos, compartiendo música con grandes artistas como <strong>Maggie Cullen, Benito Cerati, La Mosca, Edu Schmidt y Teresa Parodi</strong>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 4: Peace Boat -->
+                    <div class="flex gap-4">
+                        <div class="text-4xl text-madera-300 mt-1"><i class="fas fa-ship"></i></div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Crucero "Peace Boat"</h3>
+                            <p class="text-sm font-semibold text-madera-300 mb-1">Enero 2025 y Enero 2026</p>
+                            <p class="text-sm md:text-base text-madera-100 opacity-90">
+                                Algunos miembros de nuestro team compartieron conciertos y llevaron la cultura argentina durante semanas a bordo del crucero japonés "Peace Boat".
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Hito 5: Giras -->
+                    <div class="flex gap-4 md:col-span-2 justify-center mt-4">
+                        <div class="text-4xl text-madera-300 mt-1"><i class="fas fa-bus"></i></div>
+                        <div class="max-w-2xl">
+                            <h3 class="text-xl font-bold text-white mb-2">Giras y recorridos</h3>
+                            <p class="text-sm md:text-base text-madera-100 opacity-90">
+                                Tuvimos la posibilidad de hacer una gira con nuestra primera orquesta recorriendo la provincia y lugares como Alberti, Dolores y Luján. Además, pudimos conocer juntos y recorrer el predio de la AFA Lionel Andrés Messi.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Dedicada: Integrantes -->
+        <section class="bg-white py-20 px-6 border-b-8 border-madera-900 print-avoid-break">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-serif text-madera-900 uppercase tracking-widest mb-4">Miembros del Team</h2>
+                    <div class="h-1 w-24 bg-madera-600 mx-auto mb-6"></div>
+                    <p class="text-lg text-madera-600 max-w-2xl mx-auto">Los 5 fundadores del Team Matanza.</p>
+                </div>
+
+                <!-- Grid de Integrantes -->
+                <div class="flex flex-wrap justify-center gap-10 md:gap-14">
+                    
+                    <!-- Integrante 1 -->
+                    <div class="w-full sm:w-[45%] lg:w-[28%] text-center group">
+                        <div class="w-48 h-48 mx-auto rounded-full border-4 border-madera-300 overflow-hidden mb-6 shadow-lg bg-madera-100 flex items-center justify-center">
+                            <img src="fotolautaro.png" alt="Lautaro Duarte" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-madera-900 mb-1">Lautaro Duarte</h3>
+                        <p class="text-sm font-bold text-madera-600 uppercase tracking-wide mb-3">Contrabajista</p>
+                        <p class="text-sm text-madera-800">Comenzó a tocar el contrabajo en la Orquesta Escuela de La Ferrere donde hoy se desempeña como docente. Inició sus estudios en el Conservatorio de Morón en 2021 con el Profesor Gabriel Amado y hoy los continúa en el ISATC. Actualmente forma parte de la Orquesta Sinfónica Juvenil Bonaerense, la Orquesta Sinfónica Juvenil Nacional y la Orquesta Académica del Teatro Colón.</p>
+                    </div>
+
+                    <!-- Integrante 2 -->
+                    <div class="w-full sm:w-[45%] lg:w-[28%] text-center group">
+                        <div class="w-48 h-48 mx-auto rounded-full border-4 border-madera-300 overflow-hidden mb-6 shadow-lg bg-madera-100 flex items-center justify-center">
+                            <img src="fotothomasbleckmann.png" alt="Thomas Bleckmann" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-madera-900 mb-1">Thomas Bleckmann</h3>
+                        <p class="text-sm font-bold text-madera-600 uppercase tracking-wide mb-3">Violista</p>
+                        <p class="text-sm text-madera-800">Violista con una profunda vocación orquestal y docente. Cursa la Licenciatura en Viola en la Universidad Nacional de las Artes (UNA) y es miembro de la Orquesta Sinfónica Juvenil Bonaerense. Tras haber sido becario del programa Martha Argerich, actualmente continúa perfeccionándose con los maestros Ana Corrado y Javier Portero.</p>
+                    </div>
+
+                    <!-- Integrante 3 -->
+                    <div class="w-full sm:w-[45%] lg:w-[28%] text-center group">
+                        <div class="w-48 h-48 mx-auto rounded-full border-4 border-madera-300 overflow-hidden mb-6 shadow-lg bg-madera-100 flex items-center justify-center">
+                            <img src="fotonahuel.png" alt="Nahuel Jurado" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-madera-900 mb-1">Nahuel Jurado</h3>
+                        <p class="text-sm font-bold text-madera-600 uppercase tracking-wide mb-3">Violinista</p>
+                        <p class="text-sm text-madera-800">Violinista de gran sensibilidad y una destacada capacidad interpretativa. Cursa sus estudios en el Conservatorio Alberto Ginastera con la profesora Valeria Kaladjian. Su versatilidad lo ha llevado a ser sesionista en festivales como Cosquín y embajador en el crucero "Peace Boat". Se perfecciona con maestros como Pablo Sangiorgio y Andrés González.</p>
+                    </div>
+
+                    <!-- Integrante 4 -->
+                    <div class="w-full sm:w-[45%] lg:w-[28%] text-center group">
+                        <div class="w-48 h-48 mx-auto rounded-full border-4 border-madera-300 overflow-hidden mb-6 shadow-lg bg-madera-100 flex items-center justify-center">
+                            <img src="fotoantonio.png" alt="Antonio Mansilla" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-madera-900 mb-1">Antonio Mansilla</h3>
+                        <p class="text-sm font-bold text-madera-600 uppercase tracking-wide mb-3">Violinista <span class="lowercase normal-case font-normal text-xs block mt-1">(y guitarra del ensamble)</span></p>
+                        <p class="text-sm text-madera-800">Apasionado por la música desde joven y concertino de la Orquesta Escuela de La Ferrere durante muchos años. En 2023 ingresa al Conservatorio de Morón en donde hoy continúa sus estudios en el Profesorado de Violín. Miembro de la Orquesta Sinfónica Juvenil Bonaerense. Actualmente se perfecciona con el Maestro Guillermo Kajrnetz.</p>
+                    </div>
+
+                    <!-- Integrante 5 -->
+                    <div class="w-full sm:w-[45%] lg:w-[28%] text-center group">
+                        <div class="w-48 h-48 mx-auto rounded-full border-4 border-madera-300 overflow-hidden mb-6 shadow-lg bg-madera-100 flex items-center justify-center">
+                            <img src="fototomasojeda.png" alt="Tomas Ojeda" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-2xl font-bold text-madera-900 mb-1">Tomas Ojeda</h3>
+                        <p class="text-sm font-bold text-madera-600 uppercase tracking-wide mb-3">Violinista</p>
+                        <p class="text-sm text-madera-800">Violinista de raíz académica y popular. En 2019 comenzó sus estudios en el Conservatorio de Música “Alberto Ginastera” con la profesora Valeria Kaladjian. Es miembro de la Orquesta Sinfónica Juvenil Bonaerense y la Orquesta Sinfónica Juvenil Nacional “Libertador San Martín”. Actualmente se perfecciona con el maestro Daniel Robuschi.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
